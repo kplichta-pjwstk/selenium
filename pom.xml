@@ -17,12 +17,15 @@
     </properties>
 
     <dependencies>
+<!--        aby móc korzystać z selenium musimy dodać ją do aplikacji, wersja dependency ma tu duże znaczenie - musi być odpowiednia do zainstalowanej u nas, lokalnie wersji przeglądarki-->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.16.1</version>
             <scope>test</scope>
         </dependency>
+<!--        poniżej biblioteki junit - korzystaliśmy z nich już przy pisaniu testów,
+zapewnią nam ich obsługę (adnotacje @Test w celu oznaczanie metod jako testowe i assercje to sprawdzania wyników) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
